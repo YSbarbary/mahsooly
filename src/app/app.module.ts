@@ -10,6 +10,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { SignupComponent } from './signup/signup.component';
 import { LoanRequestComponent } from './loan-request/loan-request.component';
 import { ConfirmAfterRequestComponent } from './confirm-after-request/confirm-after-request.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BootomNavComponent } from './dashboard/bootom-nav/bootom-nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ConfirmAfterRequestComponent } from './confirm-after-request/confirm-af
     HomeComponent,
     SignupComponent,
     LoanRequestComponent,
-    ConfirmAfterRequestComponent
+    ConfirmAfterRequestComponent,
+    DashboardComponent,
+    BootomNavComponent
   ],
   imports: [
     BrowserModule,
