@@ -18,7 +18,7 @@ install:
 script:
 - yarn lint
 - yarn build --base-href /mahsooly/
-- mv dist/my-awesome-project/index.html dist/my-awesome-project/404.html
+- mv dist/mahsooly/index.html dist/mahsooly/404.html
 deploy:
   provider: pages
   skip_cleanup: true
