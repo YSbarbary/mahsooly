@@ -1,28 +1,26 @@
+
 language: node_js
 node_js:
-- "9"
+- "10.15"
 dist: trusty
-sudo: false
+sudo: required
 
 branches:
   only:
   - master
 
-cache:
-  directories:
-  - node_modules
-
-install:
-- npm install -g yarn
+before_script:
+- npm install -g @angular/cli
 
 script:
-- yarn lint
-- yarn build --base-href /mahsooly/
-- mv dist/mahsooly/index.html dist/mahsooly/404.html
+- ng lint
+- ng build --prod --base-href https://mahsooly.com
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist/mahsooly
   on:
-branch: master
+    branch: master
+fqdn: mahsooly.com
