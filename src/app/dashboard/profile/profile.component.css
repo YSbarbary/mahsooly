@@ -2,7 +2,7 @@
   text-align: center;
   padding: 1.5rem;
 }
-.flex-profile img{
+.flex-profile img.profile{
   margin-bottom: 30px;
   width: 40%;
 }
@@ -12,7 +12,27 @@ span{
 
 .badge{
   text-align: center;
-  background-color: #f4fbf0;
   display: flex;
-  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.badge div{
+  background-color: #f4fbf0;
+  padding: 10px;
+
+}
+.badge img{
+  width: 40px;
+}
+
+.badge p{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.bio{
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #f4fbf0;
+  text-align: right;
 }
